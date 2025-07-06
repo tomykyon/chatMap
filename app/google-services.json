@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "420749895462",
+    "project_id": "chatmap-76740",
+    "storage_bucket": "chatmap-76740.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420749895462:android:8354f7384612984b1483e7",
+        "android_client_info": {
+          "package_name": "com.websarva.wings.android.chatmap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4Nk9a7Fqh7keJDYz_lvGLHSv6QDmI-Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
