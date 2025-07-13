@@ -3,6 +3,9 @@
 **メッセージと位置情報が同時に共有できるアプリケーションです。**
 
 ---
+![チャットの動き](https://github.com/aniru/chatMap/blob/main/chatmap/chatMap_preview.gif?raw=true)
+
+
 
 ## 目的
 
