@@ -3,7 +3,13 @@
 **メッセージと位置情報が同時に共有できるアプリケーションです。**
 
 ---
-![チャットの動き](https://github.com/aniru/chatMap/blob/main/chatmap/chatMap_preview.gif?raw=true)
+![チャットの動き](https://github.com/tomykyon/chatMap/blob/master/chatmap/Screenshot_20250713_213035_chatMap.jpg?raw=true)
+![チャットの動き](https://github.com/tomykyon/chatMap/blob/master/chatmap/Screenshot_20250713_213058_chatMap.jpg?raw=true)
+![チャットの動き](https://github.com/tomykyon/chatMap/blob/master/chatmap/Screenshot_20250713_214202_chatMap.jpg?raw=true)
+![チャットの動き](https://github.com/tomykyon/chatMap/blob/master/chatmap/Screenshot_20250713_214311_chatMap.jpg?raw=true)
+![チャットの動き](https://github.com/tomykyon/chatMap/blob/master/chatmap/4f8d1b5b045f4243a993e36a0dc1f8a2.gif?raw=true)
+
+
 
 
 
