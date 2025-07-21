@@ -152,7 +152,7 @@ public class GroupChatActivity extends AppCompatActivity {
         setTitle(groupName);
 
         if (groupId != null) {
-            // 🔁 既存のグループに参加
+            // 既存のグループに参加
             db.collection("groups").document(groupId)
                     .get()
                     .addOnSuccessListener(documentSnapshot -> {
@@ -182,7 +182,6 @@ public class GroupChatActivity extends AppCompatActivity {
                     });
         }
 
-        // 以下はチャット画面の初期化（そのままでOK）
         editTextMessage = findViewById(R.id.editTextMessage);
         buttonSend = findViewById(R.id.buttonSend);
         recyclerViewMessages = findViewById(R.id.recyclerViewMessages);
@@ -206,7 +205,7 @@ public class GroupChatActivity extends AppCompatActivity {
         Map<String, Object> groupData = new HashMap<>();
         groupData.put("members", memberIds);
         groupData.put("name", groupName);
-        groupData.put("roomCode", roomCode); // 🔴← これをFirestoreに保存！
+        groupData.put("roomCode", roomCode); // 🔴← これをFirestoreに保存
 
         FirebaseFirestore.getInstance().collection("groups")
                 .add(groupData)
@@ -284,7 +283,7 @@ public class GroupChatActivity extends AppCompatActivity {
                         } else if (timestampObj instanceof Long) {
                             ts = (Long) timestampObj;
                         } else {
-                            // timestampがnullか型不明なら現在時刻や0を入れるなど対処
+                        
                             ts = 0;
                         }
                         // 位置情報の取得
@@ -298,15 +297,6 @@ public class GroupChatActivity extends AppCompatActivity {
                     messageAdapter.notifyDataSetChanged();
                     recyclerViewMessages.scrollToPosition(messageList.size() - 1);
                 });
-    }
-
-    private String getChatRoomId(String userId1, String userId2) {
-        // 並び順を固定（辞書順でソート）
-        if (userId1.compareTo(userId2) < 0) {
-            return userId1 + "_" + userId2;
-        } else {
-            return userId2 + "_" + userId1;
-        }
     }
 
     private void sendMessage() {
